@@ -1,0 +1,6 @@
+branches:
+  only:
+  - "/^v[0-9]/"
+matrix:
+  fast_finish: true
+  include:

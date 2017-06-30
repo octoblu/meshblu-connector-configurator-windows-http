@@ -1,0 +1,59 @@
+{
+  "name": "meshblu-connector-configurator-windows-http",
+  "version": "1.0.0",
+  "description": "Run meshblu connectors on the windows from a configuration pulled from http",
+  "bin": {
+    "meshblu-connector-configurator-windows-http": "command.js"
+  },
+  "main": "index.js",
+  "scripts": {
+    "package": "pkg --out-dir ./deploy ./command.js",
+    "test": "exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/octoblu/meshblu-connector-configurator-meshblu-json.git"
+  },
+  "keywords": [
+    "meshblu",
+    "meshblu-connector"
+  ],
+  "author": "Octoblu <npm@octoblu.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/octoblu/meshblu-connector-configurator-meshblu-json/issues"
+  },
+  "homepage": "https://github.com/octoblu/meshblu-connector-configurator-meshblu-json#readme",
+  "pkg": {
+    "scripts": [
+      "package.json",
+      "index.js",
+      "src/*.js",
+      "lib/*.js",
+      "jobs/**/*.js",
+      "configs/**/*.js",
+      "node_modules/meshblu-connector-schema-generator/dist/*.js",
+      "node_modules/meshblu-connector-schema-generator/*.js",
+      "node_modules/meshblu-connector-runner/*.js",
+      "node_modules/meshblu-connector-runner/dist/*.js"
+    ]
+  },
+  "dependencies": {
+    "axios": "^0.16.2",
+    "bluebird": "^3.5.0",
+    "chalk": "^1.1.3",
+    "debug": "^2.6.8",
+    "fs-extra": "^3.0.1",
+    "glob": "^7.1.2",
+    "jsonfile": "^3.0.0",
+    "lodash": "^4.17.4",
+    "meshblu-connector-daemon": "^1.1.4",
+    "octodash": "^1.2.5"
+  },
+  "devDependencies": {
+    "eslint": "^4.1.1",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.6.1",
+    "eslint-plugin-node": "^5.1.0"
+  }
+}
