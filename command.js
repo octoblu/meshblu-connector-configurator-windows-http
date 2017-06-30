@@ -28,8 +28,8 @@ const CLI_OPTIONS = [
     type: 'string',
     required: true,
     env: 'MESHBLU_CONNECTOR_USERNAME',
-    help: 'User name override',
-    helpArg: 'NUMBER',
+    help: 'username override',
+    helpArg: 'USERNAME',
     default: getUsername(),
   },
 ]
