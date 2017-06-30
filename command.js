@@ -24,10 +24,10 @@ const CLI_OPTIONS = [
     completionType: 'file',
   },
   {
-    names: ['user-name'],
+    names: ['username'],
     type: 'string',
     required: true,
-    env: 'MESHBLU_CONNECTOR_SERIAL_NUMBER',
+    env: 'MESHBLU_CONNECTOR_USERNAME',
     help: 'User name override',
     helpArg: 'NUMBER',
     default: getUsername(),
@@ -46,9 +46,9 @@ class MeshbluConnectorConfiguratorCommand {
 
   run() {
     const options = this.octoDash.parseOptions()
-    const { connectorHome, pm2Home, userName } = options
+    const { connectorHome, pm2Home, username } = options
 
-    const configurator = new MeshbluConnectorConfigurator({ connectorHome, pm2Home, userName })
+    const configurator = new MeshbluConnectorConfigurator({ connectorHome, pm2Home, username })
     return configurator.configurate()
   }
 
