@@ -1,0 +1,12 @@
+<Include>
+  <Directory Id='TARGETDIR' Name='SourceDir'>
+    <Directory Id='ProgramFiles$(var.If64)Folder' Name='PFiles'>
+      <Directory Id='MeshbluConnectors_Folder' Name='MeshbluConnectors'>
+        <Directory Id='MeshbluConnectorsConfigurators_Folder' Name='configurators'>
+          <Directory Id='INSTALLDIR' Name='$(var.DestinationPath)'>
+          </Directory>
+        </Directory>
+      </Directory>
+    </Directory>
+  </Directory>
+</Include>
