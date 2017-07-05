@@ -2,6 +2,40 @@
 # yarn lockfile v1
 
 
+"@octoblu/pm2@^2.6.0":
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/@octoblu/pm2/-/pm2-2.6.0.tgz#b38caf133d643f9ead7448a88605e0620d66a370"
+  dependencies:
+    async "1.5"
+    blessed "^0.1.81"
+    chalk "^1.1"
+    chokidar "^1.7"
+    cli-table "0.3.1"
+    commander "^2.9"
+    cron "1.2.1"
+    debug "^2.3.2"
+    eventemitter2 "1.0.5"
+    fclone "1.0.11"
+    mkdirp "0.5.1"
+    moment "^2.15"
+    needle "1.6.0"
+    nssocket "0.6.0"
+    pidusage "^1.1.0"
+    pm2-axon "3.0.2"
+    pm2-axon-rpc "0.4.5"
+    pm2-deploy "^0.3.5"
+    pm2-multimeter "^0.1.2"
+    pmx "^1.2.0"
+    promptly "2.2.0"
+    semver "^5.2"
+    shelljs "0.7.8"
+    source-map-support "^0.4.6"
+    sprintf-js "1.1.1"
+    vizion "^0.2"
+    yamljs "0.2.10"
+  optionalDependencies:
+    gkt "https://tgz.pm2.io/gkt-1.0.0.tgz"
+
 abbrev@1:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.1.0.tgz#d0554c2256636e2f56e7c2e5ad183f859428d81f"
@@ -1188,11 +1222,11 @@ lodash@^4.0.0, lodash@^4.17.4, lodash@^4.3.0:
   version "4.17.4"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
 
-meshblu-connector-daemon@^1.1.4:
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/meshblu-connector-daemon/-/meshblu-connector-daemon-1.1.4.tgz#e6a57a413dfc1eebd6fa1a7ff111d41a5939a281"
+meshblu-connector-daemon@^1.1.5:
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/meshblu-connector-daemon/-/meshblu-connector-daemon-1.1.5.tgz#c363052e62e893dfaf6ee9c8ac2336b4b8051210"
   dependencies:
-    pm2-custom "^1.0.0"
+    pm2-custom "^1.0.1"
 
 methods@^1.1.1:
   version "1.1.2"
@@ -1511,11 +1545,11 @@ pm2-axon@3.0.2:
     debug "~2.2.0"
     escape-regexp "0.0.1"
 
-pm2-custom@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/pm2-custom/-/pm2-custom-1.0.0.tgz#865fe98d0b8998c9b944148fcb164ddde22229d0"
+pm2-custom@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/pm2-custom/-/pm2-custom-1.0.1.tgz#77010f889c773a7639479e5da989a721c0b4a122"
   dependencies:
-    pm2 "^2.5.0"
+    "@octoblu/pm2" "^2.6.0"
 
 pm2-deploy@^0.3.5:
   version "0.3.5"
@@ -1529,40 +1563,6 @@ pm2-multimeter@^0.1.2:
   resolved "https://registry.yarnpkg.com/pm2-multimeter/-/pm2-multimeter-0.1.2.tgz#1a1e55153d41a05534cea23cfe860abaa0eb4ace"
   dependencies:
     charm "~0.1.1"
-
-pm2@^2.5.0:
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/pm2/-/pm2-2.5.0.tgz#11c0ff3497c22923e6221e9d78008b1cb4584bd1"
-  dependencies:
-    async "1.5"
-    blessed "^0.1.81"
-    chalk "^1.1"
-    chokidar "^1.7"
-    cli-table "0.3.1"
-    commander "^2.9"
-    cron "1.2.1"
-    debug "^2.3.2"
-    eventemitter2 "1.0.5"
-    fclone "1.0.11"
-    mkdirp "0.5.1"
-    moment "^2.15"
-    needle "1.6.0"
-    nssocket "0.6.0"
-    pidusage "^1.1.0"
-    pm2-axon "3.0.2"
-    pm2-axon-rpc "0.4.5"
-    pm2-deploy "^0.3.5"
-    pm2-multimeter "^0.1.2"
-    pmx "^1.2.0"
-    promptly "2.2.0"
-    semver "^5.2"
-    shelljs "0.7.8"
-    source-map-support "^0.4.6"
-    sprintf-js "1.1.1"
-    vizion "^0.2"
-    yamljs "0.2.10"
-  optionalDependencies:
-    gkt "https://tgz.pm2.io/gkt-1.0.0.tgz"
 
 pmx@^1.2.0:
   version "1.2.0"
