@@ -1,6 +1,6 @@
 {
   "name": "meshblu-connector-configurator-windows-http",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Run meshblu connectors on the windows from a configuration pulled from http",
   "bin": {
     "meshblu-connector-configurator-windows-http": "command.js"
@@ -47,7 +47,7 @@
     "glob": "^7.1.2",
     "jsonfile": "^3.0.1",
     "lodash": "^4.17.4",
-    "meshblu-connector-daemon": "^1.1.5",
+    "meshblu-connector-daemon": "^1.1.7",
     "octodash": "^1.3.1"
   },
   "devDependencies": {

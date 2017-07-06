@@ -2,9 +2,9 @@
 # yarn lockfile v1
 
 
-"@octoblu/pm2@^2.6.0":
-  version "2.6.0"
-  resolved "https://registry.yarnpkg.com/@octoblu/pm2/-/pm2-2.6.0.tgz#b38caf133d643f9ead7448a88605e0620d66a370"
+"@octoblu/pm2@^2.6.2":
+  version "2.6.2"
+  resolved "https://registry.yarnpkg.com/@octoblu/pm2/-/pm2-2.6.2.tgz#d775efa6bda8ba73a678edbf19d7f3634a458b52"
   dependencies:
     async "1.5"
     blessed "^0.1.81"
@@ -1222,11 +1222,11 @@ lodash@^4.0.0, lodash@^4.17.4, lodash@^4.3.0:
   version "4.17.4"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
 
-meshblu-connector-daemon@^1.1.5:
-  version "1.1.5"
-  resolved "https://registry.yarnpkg.com/meshblu-connector-daemon/-/meshblu-connector-daemon-1.1.5.tgz#c363052e62e893dfaf6ee9c8ac2336b4b8051210"
+meshblu-connector-daemon@^1.1.7:
+  version "1.1.7"
+  resolved "https://registry.yarnpkg.com/meshblu-connector-daemon/-/meshblu-connector-daemon-1.1.7.tgz#1fcdfce53e2bdcaf25411b3323abb9ad214afd61"
   dependencies:
-    pm2-custom "^1.0.1"
+    pm2-custom "^1.0.3"
 
 methods@^1.1.1:
   version "1.1.2"
@@ -1545,11 +1545,11 @@ pm2-axon@3.0.2:
     debug "~2.2.0"
     escape-regexp "0.0.1"
 
-pm2-custom@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/pm2-custom/-/pm2-custom-1.0.1.tgz#77010f889c773a7639479e5da989a721c0b4a122"
+pm2-custom@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/pm2-custom/-/pm2-custom-1.0.3.tgz#52f6242a6829bfc92d1b640f85f4dd20f068477e"
   dependencies:
-    "@octoblu/pm2" "^2.6.0"
+    "@octoblu/pm2" "^2.6.2"
 
 pm2-deploy@^0.3.5:
   version "0.3.5"
