@@ -2,9 +2,18 @@
 const OctoDash = require('octodash')
 const packageJSON = require('./package.json')
 const { MeshbluConnectorConfigurator } = require('./lib/configurator')
-const { getUsername } = require('./lib/helpers')
+const { getSerialNumber } = require('./lib/helpers')
 
 const CLI_OPTIONS = [
+  {
+    names: ['configuration-base-url'],
+    type: 'string',
+    required: true,
+    env: 'MESHBLU_CONNECTOR_CONFIGURATOR_PI_HTTP_CONFIGURATION_BASE_URL',
+    help: "Base location where the configuration can be found. The Pi's serial number will be appended to the path.",
+    helpArg: 'URL',
+    default: 'https://security-agency.smart.octo.space/configurations/',
+  },
   {
     names: ['connector-home'],
     type: 'string',
@@ -24,13 +33,13 @@ const CLI_OPTIONS = [
     completionType: 'file',
   },
   {
-    names: ['username'],
+    names: ['serial-number'],
     type: 'string',
     required: true,
-    env: 'MESHBLU_CONNECTOR_USERNAME',
-    help: 'username override',
-    helpArg: 'USERNAME',
-    default: getUsername(),
+    env: 'MESHBLU_CONNECTOR_CONFIGURATOR_WINDOWS_HTTP_SERIAL_NUMBER',
+    help: 'serial number override',
+    helpArg: 'SERIAL_NUMBER',
+    default: getSerialNumber(),
   },
 ]
 
@@ -46,9 +55,9 @@ class MeshbluConnectorConfiguratorCommand {
 
   run() {
     const options = this.octoDash.parseOptions()
-    const { connectorHome, pm2Home, username } = options
+    const { configurationBaseUrl, connectorHome, pm2Home, serialNumber } = options
 
-    const configurator = new MeshbluConnectorConfigurator({ connectorHome, pm2Home, username })
+    const configurator = new MeshbluConnectorConfigurator({ configurationBaseUrl, connectorHome, pm2Home, serialNumber })
     return configurator.configurate()
   }
 

@@ -1,0 +1,15 @@
+{
+    "extends": "airbnb-base",
+    "plugins": [
+      "import"
+    ],
+    "rules": {
+      "class-methods-use-this": [0],
+      "semi": [0, "never"],
+      "max-len": ["error", {"code": 180}],
+      "no-underscore-dangle": [0, {"allow": true}],
+      "consistent-return": [0, "never"],
+      "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
+      "space-before-function-paren": [0, "never"]
+    }
+}
