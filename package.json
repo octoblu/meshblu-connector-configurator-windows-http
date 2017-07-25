@@ -1,6 +1,6 @@
 {
   "name": "meshblu-connector-configurator-windows-http",
-  "version": "4.0.0",
+  "version": "5.0.0",
   "description": "Run meshblu connectors on the windows from a configuration pulled from http",
   "bin": {
     "meshblu-connector-configurator-windows-http": "command.js"
